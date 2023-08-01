@@ -1,18 +1,21 @@
-.menu {
-  a {
-    color: #fff;
-    font-size: 20px;
-  }
-
-  li:not(:last-child) {
-    margin-right: 64px;
-
-    @include pad-992 {
-      margin-right: 32px;
+.header {
+  .menu {
+    a {
+      color: #fff;
+      font-size: 20px;
     }
-    
-    @include phone-767 {
-      margin-right: 16px;
+  
+    li:not(:last-child) {
+      margin-right: 64px;
+  
+      @include pad-992 {
+        margin-right: 32px;
+      }
+  
+      @include phone-767 {
+        margin-right: 16px;
+      }
     }
   }
 }
+
