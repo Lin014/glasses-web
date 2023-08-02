@@ -1,5 +1,5 @@
 # Vite - Glasses Website
-切版直播班 Week 3
+切版直播班 Week 3 & 4
 
 ## Node.js 版本
   - 專案的 Node.js 版本需為 v16 以上
