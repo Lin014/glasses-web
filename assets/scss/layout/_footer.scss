@@ -3,9 +3,23 @@
   padding-top: 48px;
   padding-bottom: 32px;
 
+  @include pad-992 {
+    padding-bottom: 40px;
+
+    .container {
+      padding-left: 36px;
+      padding-right: 36px;
+    }
+  }
+
   @include phone-767 {
     padding-top: 24px;
     padding-bottom: 24px;
+
+    .container {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
   }
 
   a {
@@ -23,8 +37,6 @@
   }
 
   .social {
-    margin-bottom: 24px;
-
     li {
       width: 48px;
 
@@ -44,13 +56,15 @@
 
   .contact {
     font-size: 36px;
+    margin-top: 24px;
 
     @include phone-767 {
       font-size: 16px;
+      margin-top: 0;
     }
 
     img {
-      margin-right: 22px;
+      margin-right: 20px;
 
       @include phone-767 {
         width: 18px;
@@ -62,11 +76,25 @@
     }
   }
 
-  hr {
+  .hr {
     margin-bottom: 32px;
+    border: 0;
+    border-top: 1px solid $white-color;
 
     @include phone-767 {
       margin-bottom: 16px;
+    }
+  }
+
+  .top {
+    margin-bottom: 32px;
+
+    @include phone-767 {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: start;
+      margin-bottom: 24px;
     }
   }
 
@@ -95,17 +123,5 @@
         margin-right: 48px;
       }
     }
-  }
-
-  .top {
-    margin-bottom: 32px;
-
-    @include phone-767 {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-between;
-      align-items: start;
-      margin-bottom: 24px;
-    }
-  }
+  }  
 }
