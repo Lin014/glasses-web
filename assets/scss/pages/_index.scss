@@ -1,11 +1,41 @@
-body {
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Noto Sans TC', sans-serif;
-  line-height: 1.5;
-}
+.header-image {
+  background-image: url("/assets/images/home-header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 
-.container {
-  max-width: 1296px;
-  margin: 0 auto;
-}
+  @include pad-992 {
+    background-image: url("/assets/images/home-header-sm.png");
+  }
 
+  .container {
+    text-align: right;
+    padding-top: 296px;
+    padding-bottom: 296px;
+
+    @include phone-767 {
+      padding-top: 144px;
+      padding-bottom: 144px;
+    }
+  }
+
+  .title-sm {
+    font-size: 36px;
+    color: $secondary-color;
+
+    @include phone-767 {
+      font-size: 16px;
+    }
+  }
+
+  .title-l {
+    font-size: 64px;
+    color: $secondary-color;
+    font-weight: bold;
+    margin-bottom: 4px;
+
+    @include phone-767 {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+  }
+}

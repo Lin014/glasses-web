@@ -63,13 +63,18 @@
       margin-top: 0;
     }
 
-    img {
+    span {
       margin-right: 20px;
+    }
+
+    .material-icons-outlined { 
+      font-size: 36px;
 
       @include phone-767 {
-        width: 18px;
+        font-size: 18px;
       }
     }
+
 
     li:not(:last-child) {
       margin-bottom: 8px;

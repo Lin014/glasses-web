@@ -1,0 +1,10 @@
+.btn-primary {
+    color: $white-color;
+    background-color: $primary-color;
+    border: 0;
+
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+}

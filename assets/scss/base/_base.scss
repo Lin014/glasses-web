@@ -14,8 +14,12 @@ body {
   }
 }
 
-a:hover {
-  opacity: 0.8;
+a {
+  color: black;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 
