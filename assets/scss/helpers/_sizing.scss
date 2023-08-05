@@ -1,3 +1,22 @@
+.w-48 {
+  width: 48px;
+}
 .w-80 {
-    width: 80px;
+  width: 80px;
+}
+
+.w-p-50 {
+  width: 50%;
+}
+
+@include pad-992 {
+  .w-lg-40 {
+    width: 40px;
+  }
+}
+
+@include phone-767 {
+  .w-md-24 {
+    width: 24px;
+  }
 }

@@ -1,132 +1,15 @@
-.footer {
-  color: #fff;
-  padding-top: 48px;
-  padding-bottom: 32px;
-
-  @include pad-992 {
-    padding-bottom: 40px;
-
-    .container {
-      padding-left: 36px;
-      padding-right: 36px;
-    }
-  }
-
-  @include phone-767 {
-    padding-top: 24px;
-    padding-bottom: 24px;
-
-    .container {
-      padding-left: 12px;
-      padding-right: 12px;
-    }
-  }
-
-  a {
-    color: #fff;
-  }
-
-  .menu {
-    li:not(:last-child) {
-      margin-right: 48px;
-    }
-
-    @include phone-767 {
-      display: none;
-    }
-  }
-
-  .social {
-    li {
-      width: 48px;
-
-      @include phone-767 {
-        width: 24px;
-      }
-
-      &:not(:last-child) {
-        margin-right: 32px;
-
-        @include phone-767 {
-          margin-right: 8px;
-        }
-      }
-    }
-  }
-
-  .contact {
+footer {
+  .material-icons-outlined { 
     font-size: 36px;
-    margin-top: 24px;
-
+  
     @include phone-767 {
-      font-size: 16px;
-      margin-top: 0;
-    }
-
-    span {
-      margin-right: 20px;
-    }
-
-    .material-icons-outlined { 
-      font-size: 36px;
-
-      @include phone-767 {
-        font-size: 18px;
-      }
-    }
-
-
-    li:not(:last-child) {
-      margin-bottom: 8px;
+      font-size: 18px;
     }
   }
-
+  
   .hr {
-    margin-bottom: 32px;
     border: 0;
     border-top: 1px solid $white-color;
-
-    @include phone-767 {
-      margin-bottom: 16px;
-    }
   }
-
-  .top {
-    margin-bottom: 32px;
-
-    @include phone-767 {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-between;
-      align-items: start;
-      margin-bottom: 24px;
-    }
-  }
-
-  .bottom {
-    display: flex;
-    justify-content: space-between;
-
-    @include phone-767 {
-      display: block;
-      
-      *:not(:last-child) {
-        margin-bottom: 8px;
-      }
-    }
-
-    ul {
-      display: flex;
-      font-size: 14px;
-
-      @include phone-767 {
-        display: block;
-        font-size: 16px;
-      }
-
-      li:not(:last-child) {
-        margin-right: 48px;
-      }
-    }
-  }  
 }
+

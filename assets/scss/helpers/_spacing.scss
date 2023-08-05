@@ -1,7 +1,16 @@
 // margin
+.mr-20 { margin-right: 20px; }
+.mr-36 { margin-right: 36px; }
+.mr-48 {
+  margin-right: 48px;
+}
 .mr-64 {
   margin-right: 64px;
 }
+.mt-24 { margin-top: 24px;}
+.mb-8 { margin-bottom: 8px; }
+.mb-32 { margin-bottom: 32px; }
+
 // padding
 .py-6 {
   padding-top: 6px;
@@ -10,6 +19,10 @@
 .py-12 {
   padding-top: 12px;
   padding-bottom: 12px;
+}
+.py-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .px-12 {
@@ -22,4 +35,42 @@
   padding-right: 62px;
 }
 
+.pt-48 { padding-top: 48px; }
+.pb-32 { padding-bottom: 32px; }
+
+// pad-992
+@include pad-992 {
+  .mr-lg-16 { margin-right: 16px; }
+
+  .px-lg-36 {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .pb-lg-40 { padding-bottom: 40px; }
+
+}
+// phone-767
+@include phone-767 {
+  .mr-md-0 { margin-right: 0; }
+  .mr-md-8 { margin-right: 8px; }
+  .mb-md-8 { margin-bottom: 8px; }
+  .mt-md-0 { margin-top: 0; }
+  .mb-md-16 { margin-bottom: 16px; }
+  .mb-md-24 { margin-bottom: 24px; }
+
+  .px-md-12 { 
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .px-md-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .py-md-24 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
 

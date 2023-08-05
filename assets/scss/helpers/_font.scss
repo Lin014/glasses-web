@@ -1,3 +1,16 @@
-.text-20 {
+.fs-14 { font-size: 14px; }
+.fs-20 {
     font-size: 20px;
+}
+.fs-36 { font-size: 36px; }
+
+.text-center { text-align: center }
+
+.color-white { color: $white-color; }
+
+// pad-992
+
+// phone-767
+@include phone-767 {
+    .fs-md-16 { font-size: 16px;}
 }
