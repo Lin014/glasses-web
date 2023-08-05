@@ -1,4 +1,4 @@
-.header-image {
+.section1 {
   background-image: url("/assets/images/home-header.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -6,36 +6,59 @@
   @include pad-992 {
     background-image: url("/assets/images/home-header-sm.png");
   }
+}
 
-  .container {
-    text-align: right;
-    padding-top: 296px;
-    padding-bottom: 296px;
+.section2 {
+  li {
+    width: calc(25% - 24px);
+
+    @include pad-992 {
+      width: calc(50% - 24px);
+    }
 
     @include phone-767 {
-      padding-top: 144px;
-      padding-bottom: 144px;
+      width: 100%;
+    }
+  }
+}
+
+.section3 {
+  li {
+    width: calc(33% - 24px);
+
+    @include pad-992 {
+      width: 60%;
+    }
+  }
+}
+
+.section4 {
+  background-image: url("/assets/images/index-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include pad-992 {
+    background-image: url("/assets/images/index-bg-md.png");
+
+    li {
+      width: 100%;
     }
   }
 
-  .title-sm {
-    font-size: 36px;
-    color: $secondary-color;
+  @include phone-767 {
+    background-image: url("/assets/images/index-bg-sm.png");
 
-    @include phone-767 {
-      font-size: 16px;
+    li {
+      &:nth-child(1) img {
+        content: url("/assets/images/home-section4-1-sm.png");
+      }
+      &:nth-child(2) img {
+        content: url("/assets/images/home-section4-2-sm.png");
+      }
     }
   }
 
-  .title-l {
-    font-size: 64px;
-    color: $secondary-color;
-    font-weight: bold;
-    margin-bottom: 4px;
-
-    @include phone-767 {
-      font-size: 24px;
-      margin-bottom: 8px;
-    }
+  .border-right {
+    border-right: 1px solid #ddd;
   }
 }

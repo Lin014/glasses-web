@@ -1,16 +1,61 @@
-.fs-14 { font-size: 14px; }
-.fs-20 {
-    font-size: 20px;
+.fs-14 {
+  font-size: 14px;
 }
-.fs-36 { font-size: 36px; }
+.fs-20 {
+  font-size: 20px;
+}
+.fs-24 {
+    font-size: 24px;
+}
+.fs-36 {
+  font-size: 36px;
+}
+.fs-48 {
+    font-size: 48px;
+}
+.fs-64 {
+    font-size: 64px;
+}
 
-.text-center { text-align: center }
+.fw-bold {
+    font-weight: bold;
+}
+.fw-900 {
+    font-weight: 900;
+}
 
-.color-white { color: $white-color; }
+.fst-italic {
+    font-style: italic;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+.color-white {
+  color: $white-color;
+}
+.color-secondary {
+  color: $secondary-color;
+}
+.color-primary {
+    color: $primary-color;
+}
 
 // pad-992
 
 // phone-767
 @include phone-767 {
-    .fs-md-16 { font-size: 16px;}
+  .fs-md-16 {
+    font-size: 16px;
+  }
+  .fs-md-24 {
+    font-size: 24px;
+  }
 }
