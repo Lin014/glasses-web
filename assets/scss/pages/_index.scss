@@ -8,27 +8,23 @@
   }
 }
 
-.section2 {
-  li {
-    width: calc(25% - 24px);
+.section2 li {
+  width: calc(25% - 24px);
 
-    @include pad-992 {
-      width: calc(50% - 24px);
-    }
+  @include pad-992 {
+    width: calc(50% - 24px);
+  }
 
-    @include phone-767 {
-      width: 100%;
-    }
+  @include phone-767 {
+    width: 100%;
   }
 }
 
-.section3 {
-  li {
-    width: calc(33% - 24px);
+.section3 li {
+  width: calc(33% - 24px);
 
-    @include pad-992 {
-      width: 60%;
-    }
+  @include pad-992 {
+    width: 60%;
   }
 }
 
@@ -60,5 +56,52 @@
 
   .border-right {
     border-right: 1px solid #ddd;
+  }
+}
+
+.section5 {
+  .card {
+    width: calc(25% - 24px);
+    box-shadow: 0px 2px 6px #00000029;
+    border: 1px solid #dee2e6;
+
+    @include pad-992 {
+      width: calc(50% - 24px);
+    }
+
+    @include phone-767 {
+      width: 100%;
+    }
+  }
+
+  .card-content {
+    min-height: 205px;
+  }
+}
+
+.section6 {
+  input {
+    border: 1px solid var(--unnamed-color-000000);
+    border: 1px solid #000000;
+  }
+
+  button {
+    width: 40%;
+
+    @include phone-767 {
+      width: 100%;
+    }
+  }
+
+  .comment {
+    width: 50%;
+
+    @include pad-992 {
+      width: 80%;
+    }
+
+    @include phone-767 {
+      width: 100%;
+    }
   }
 }

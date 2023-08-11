@@ -1,4 +1,8 @@
 // margin
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 .mr-20 { margin-right: 20px; }
 .mr-36 { margin-right: 36px; }
 .mr-24 { margin-right: 24px; }
@@ -15,8 +19,10 @@
 .mb-24 { margin-bottom: 24px; }
 .mb-32 { margin-bottom: 32px; }
 .mb-48 { margin-bottom: 48px; }
+.mb-72 { margin-bottom: 72px; }
 
 // padding
+.p-16 { padding: 16px; }
 .py-6 {
   padding-top: 6px;
   padding-bottom: 6px;
