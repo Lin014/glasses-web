@@ -1,4 +1,5 @@
 import { storeDatas } from "../data/store_datas";
+import map_lg from '../../images/map-lg.png';
 
 const storeSelect = document.getElementById("store-select");
 const storeDetailCardContainer = document.getElementById("store-detail-card-container");
@@ -97,7 +98,7 @@ const newStoreCard = (store) => {
 const mapDiv = document.createElement('div');
 mapDiv.className = 'map-div'
 const mapImage = document.createElement('img');
-mapImage.src = '../../assets/images/map-lg.png';
+mapImage.src = map_lg;
 mapImage.alt = 'map';
 mapImage.className = 'd-block';
 mapDiv.appendChild(mapImage);

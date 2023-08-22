@@ -1,9 +1,14 @@
+import taipei1 from '../../images/store-1.png';
+import taipei2 from '../../images/store-2.png';
+import taichung3 from '../../images/store-3.png';
+import kaohsiung4 from '../../images/store-4.png';
+import kaohsiung5 from '../../images/store-5.png';
 
 export const storeDatas = [
     { 
         id: 1,
         name: '台北中山旗艦店',
-        image_url: '../assets/images/store-1.png',
+        image_url: taipei1,
         phone_number: '(02)000-1234',
         phone_href: 'tel:+886-2-0001234',
         opening_hours: '10:00-21:00',
@@ -13,7 +18,7 @@ export const storeDatas = [
     { 
         id: 2,
         name: '台北綠園店',
-        image_url: '../../assets/images/store-2.png',
+        image_url: taipei2,
         phone_number: '(02)000-2345',
         phone_href: 'tel:+886-2-0002345',
         opening_hours: '10:00-21:00',
@@ -23,7 +28,7 @@ export const storeDatas = [
     { 
         id: 3,
         name: '台中清水旗艦店',
-        image_url: '/assets/images/store-3.png',
+        image_url: taichung3,
         phone_number: '(02)000-1234',
         phone_href: 'tel:+886-2-0001234',
         opening_hours: '10:00-21:00',
@@ -33,7 +38,7 @@ export const storeDatas = [
     { 
         id: 4,
         name: '高雄中正形象店',
-        image_url: '/assets/images/store-4.png',
+        image_url: kaohsiung4,
         phone_number: '(07)000-2345',
         phone_href: 'tel:+886-7-0002345',
         opening_hours: '10:00-21:00',
@@ -43,7 +48,7 @@ export const storeDatas = [
     { 
         id: 5,
         name: '高雄夢時代店',
-        image_url: '/assets/images/store-5.png',
+        image_url: kaohsiung5,
         phone_number: '(07)000-1234',
         phone_href: 'tel:+886-7-0001234',
         opening_hours: '10:00-21:00',
