@@ -3,7 +3,7 @@ export const storeDatas = [
     { 
         id: 1,
         name: '台北中山旗艦店',
-        image_url: '/assets/images/store-1.png',
+        image_url: '../assets/images/store-1.png',
         phone_number: '(02)000-1234',
         phone_href: 'tel:+886-2-0001234',
         opening_hours: '10:00-21:00',
@@ -13,7 +13,7 @@ export const storeDatas = [
     { 
         id: 2,
         name: '台北綠園店',
-        image_url: '/assets/images/store-2.png',
+        image_url: '../../assets/images/store-2.png',
         phone_number: '(02)000-2345',
         phone_href: 'tel:+886-2-0002345',
         opening_hours: '10:00-21:00',
