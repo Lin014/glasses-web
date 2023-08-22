@@ -3,6 +3,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+.mr-16 { margin-right: 16px; }
 .mr-20 { margin-right: 20px; }
 .mr-36 { margin-right: 36px; }
 .mr-24 { margin-right: 24px; }
@@ -52,13 +53,20 @@
   padding-left: 12px;
   padding-right: 12px;
 }
+.px-24 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
 .px-62 {
   padding-left: 62px;
   padding-right: 62px;
 }
 
 .pt-48 { padding-top: 48px; }
+.pt-96 { padding-top: 96px; }
 .pb-32 { padding-bottom: 32px; }
+.pl-16 { padding-left: 16px; }
+.pb-80 { padding-bottom: 80px; }
 
 // pad-992
 @include pad-992 {
@@ -72,7 +80,7 @@
   }
 
   .pb-lg-40 { padding-bottom: 40px; }
-
+  .pt-lg-80 { padding-top: 80px; }
 }
 // phone-767
 @include phone-767 {
@@ -104,5 +112,7 @@
     padding-top: 144px;
     padding-bottom: 144px;
   }
+  .pt-md-40 { padding-top: 40px; }
+  .pb-md-64 { padding-bottom: 64px;}
 }
 

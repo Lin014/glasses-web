@@ -1,0 +1,33 @@
+.store-detail {
+    width: calc(35% - 24px);
+
+    @include pad-992 {
+        width: 100%;
+
+        .store-image {
+            width: calc(50% - 12px);
+            margin-right: 24px;
+        }
+        .detail-div {
+            width: calc(50% - 12px);
+        }
+    }
+
+    @include phone-767 {
+        .store-image {
+            width: 100%;
+            margin-right: 0;
+        }
+        .detail-div {
+            width: 100%;
+        }
+    }
+}
+
+.map-div {
+    width: 65%;
+
+    @include pad-992 {
+        width: 100%;
+    }
+}

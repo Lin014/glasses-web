@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- RWD viewport -->
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <title>眼鏡官網</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+    <div class="container px-lg-36 px-md-12 pt-96 pt-lg-80 pt-md-40 pb-80 pb-md-64">
+        <div class="title pl-16 mb-32">
+            <h1 class="fs-48 fw-bold fs-md-24">門市據點</h1>
+        </div>
+    
+        <div class="mb-32">
+            <label for="store-select" class="fs-24 mr-16">選擇分店</label>
+            <select name="stores" id="store-select" width="300" class="w-300 fs-18 py-6 px-12"></select>
+        </div>
+    
+        <div class="store-cards d-flex justify-content-lg-between flex-lg-column" id="store-detail-card-container"></div>
+
+    </div>
+    
+
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../assets/js/pages/store_detail.js"></script>
+    <script type="module" src="../main.js"></script>
+</body>
+
+</html>

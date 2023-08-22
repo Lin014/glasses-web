@@ -8,3 +8,16 @@
         cursor: pointer;
     }
 }
+
+.btn-store-detail {
+    background-color: $black-color;
+    font-size: 19px;
+    color: $white-color;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+}

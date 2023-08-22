@@ -33,12 +33,32 @@
 
 
 // pad-992
+@include pad-992 {
+  .d-lg-flex { display: flex; }
+  .flex-lg-column { 
+    flex-direction: column;
+    &-reverse { flex-direction: column-reverse; }
+  }
 
+  .justify-content-lg {
+    &-start { justify-content: start; }
+    &-end { justify-content: end; }
+    &-center { justify-content: center; }
+    &-between { justify-content: space-between; }
+    &-around { justify-content: space-around; }
+    &-evenly { justify-content: space-evenly; }
+  }
+}
 // phone-767
 @include phone-767 {
   .d-md-flex { display: flex; }
   .d-md-none { display: none; }
   .d-md-block { display: block; }
+
+  .flex-md-column { 
+    flex-direction: column;
+    &-reverse { flex-direction: column-reverse; }
+  }
 
   .flex-md-row {
     flex-direction: row;

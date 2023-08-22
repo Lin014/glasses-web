@@ -1,0 +1,33 @@
+.title {
+    border-left: $title-border;
+}
+
+.store-card {
+    width: calc(33% - 24px);
+
+    &:nth-child(1), &:nth-child(2), &:nth-child(4) {
+        margin-right: 24px;
+    }
+
+    @include pad-992 {
+        width: calc(50% - 24px);
+
+        &:nth-child(2n+1) {
+            margin-right: 24px;
+        }
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+    }
+
+    @include phone-767 {
+        width: 100%;
+
+        &:nth-child(2n+1) {
+            margin-right: 0;
+        }
+    }
+    .border {
+        border: 1px solid #00000020;;
+    }
+}
