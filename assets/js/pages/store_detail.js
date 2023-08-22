@@ -97,7 +97,7 @@ const newStoreCard = (store) => {
 const mapDiv = document.createElement('div');
 mapDiv.className = 'map-div'
 const mapImage = document.createElement('img');
-mapImage.src = '../assets/images/map-lg.png';
+mapImage.src = '/assets/images/map-lg.png';
 mapImage.alt = 'map';
 mapImage.className = 'd-block';
 mapDiv.appendChild(mapImage);
@@ -112,6 +112,7 @@ for (const store of storeDatas) {
 
 storeDetailCardContainer.appendChild(newStoreCard(dataObject));
 storeDetailCardContainer.appendChild(mapDiv);
+storeSelect.value = dataObject.id;
 
 storeSelect.addEventListener("change", () => {
     var selectedValue = storeSelect.value;
