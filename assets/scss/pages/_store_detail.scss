@@ -25,7 +25,12 @@
 }
 
 .map-div {
-    width: 65%;
+    width: 60%;
+    
+    img {
+        height: 100%;
+        object-fit: cover;
+    }    
 
     @include pad-992 {
         width: 100%;

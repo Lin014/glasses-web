@@ -26,6 +26,10 @@
   @include pad-992 {
     width: 60%;
   }
+
+  @include phone-767 { 
+    width: 100%;
+  }
 }
 
 .section4 {
@@ -65,6 +69,10 @@
     box-shadow: 0px 2px 6px #00000029;
     border: 1px solid #dee2e6;
 
+    img {
+      width: 100%;
+    }
+
     @include pad-992 {
       width: calc(50% - 24px);
     }
@@ -80,13 +88,14 @@
 }
 
 .section6 {
-  input {
+  input, textarea {
     border: 1px solid var(--unnamed-color-000000);
     border: 1px solid #000000;
+    background-color: rgba($color: #000000, $alpha: 0);
   }
 
   button {
-    width: 40%;
+    width: 50%;
 
     @include phone-767 {
       width: 100%;

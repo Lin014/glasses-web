@@ -16,8 +16,8 @@ const newStoreCard = (store) => {
     // name
     const nameDiv = document.createElement('div');
     nameDiv.className = 'border py-16 px-24';
-    const nameSpan = document.createElement('span');
-    nameSpan.className = 'd-block fs-24'
+    const nameSpan = document.createElement('h3');
+    nameSpan.className = 'fs-24'
     nameSpan.textContent = store.name;
     nameDiv.appendChild(nameSpan);
 
@@ -27,49 +27,49 @@ const newStoreCard = (store) => {
 
     // phone
     const phoneIconSpan = document.createElement('span');
-    phoneIconSpan.className = 'mr-8 material-icons-outlined fs-18';
+    phoneIconSpan.className = 'd-block mr-8 material-icons-outlined fs-18';
     phoneIconSpan.textContent = 'call';
 
     const phoneTextSpan = document.createElement('span');
-    phoneTextSpan.className = 'fs-20';
+    phoneTextSpan.className = 'd-block fs-20';
     phoneTextSpan.textContent = '電話：';
 
     const phoneA = document.createElement('a');
     phoneA.href = store.phone_href;
-    phoneA.className = 'fs-20 color-black';
+    phoneA.className = 'd-block fs-20 color-black';
     phoneA.textContent = store.phone_number;
 
     const phoneLi = document.createElement('li');
-    phoneLi.className = 'mb-8'
+    phoneLi.className = 'd-flex align-items-center mb-8'
     phoneLi.appendChild(phoneIconSpan);
     phoneLi.appendChild(phoneTextSpan);
     phoneLi.appendChild(phoneA);
     
     // opening time
     const openingIconSpan = document.createElement('span');
-    openingIconSpan.className = 'mr-8 material-icons-outlined fs-18';
+    openingIconSpan.className = 'd-block mr-8 material-icons-outlined fs-18';
     openingIconSpan.textContent = 'schedule';
 
     const openingTextSpan = document.createElement('span');
-    openingTextSpan.className = 'fs-20';
+    openingTextSpan.className = 'd-block fs-20';
     openingTextSpan.textContent = '營業時間：' + store.opening_hours;
 
     const openingLi = document.createElement('li');
-    openingLi.className = 'mb-8';
+    openingLi.className = 'd-flex align-items-center mb-8';
     openingLi.appendChild(openingIconSpan);
     openingLi.appendChild(openingTextSpan);
 
     // address
     const addressIconSpan = document.createElement('span');
-    addressIconSpan.className = 'mr-8 material-icons-outlined fs-18';
+    addressIconSpan.className = 'd-block mr-8 material-icons-outlined fs-18';
     addressIconSpan.textContent = 'location_on';
 
     const addressTextSpan = document.createElement('span');
-    addressTextSpan.className = 'fs-20';
+    addressTextSpan.className = 'd-block fs-20';
     addressTextSpan.textContent = '地址：' + store.address;
 
     const addressLi = document.createElement('li');
-    addressLi.className = 'mb-8';
+    addressLi.className = 'd-flex align-items-start mb-8';
     addressLi.appendChild(addressIconSpan);
     addressLi.appendChild(addressTextSpan);
 
@@ -82,6 +82,7 @@ const newStoreCard = (store) => {
     buttonDiv.className = 'border';
 
     const detailButton = document.createElement('button');
+    detailButton.type = 'button';
     detailButton.className = 'btn-store-detail w-p-100';
     detailButton.textContent = '詳細資訊';
 
